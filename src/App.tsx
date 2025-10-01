@@ -68,6 +68,35 @@ export function App() {
             <p className="mt-4 text-neutral-700 leading-relaxed">
               Reconocidos con el Solete con Solera de la Guía Repsol, garantizamos una experiencia gastronómica auténtica y de primer nivel. Ven a disfrutar o llévate nuestro sabor a casa.
             </p>
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold">Cómo llegar</h3>
+              <div className="mt-3 relative rounded-lg overflow-hidden shadow-sm">
+                <iframe
+                  title="Mapa de Oliva Bar e Levar"
+                  src="https://www.google.com/maps?q=R%C3%BAa%20Socorro%2C%2013%2C%2015401%20Ferrol%2C%20A%20Coru%C3%B1a&output=embed"
+                  className="w-full aspect-[4/3] sm:aspect-video border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=R%C3%BAa%20Socorro%2C%2013%2C%2015401%20Ferrol%2C%20A%20Coru%C3%B1a"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute inset-0"
+                  aria-label="Abrir en Google Maps"
+                />
+              </div>
+              <div className="mt-3">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=R%C3%BAa%20Socorro%2C%2013%2C%2015401%20Ferrol%2C%20A%20Coru%C3%B1a"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
+                >
+                  Abrir en Google Maps
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
