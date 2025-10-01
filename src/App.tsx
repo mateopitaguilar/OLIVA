@@ -50,11 +50,24 @@ export function App() {
               <h1 className="text-3xl sm:text-5xl font-bold tracking-tight">Oliva Bar e Levar</h1>
               <p className="mt-3 text-neutral-700 text-sm sm:text-base">Comida casera para llevar y para disfrutar en el local. Calidad, rapidez y cercanía.</p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                <a href="/reservas" className="inline-flex items-center justify-center rounded-md bg-black px-4 py-2 text-white text-sm">Reservar</a>
+                <a href="tel:+34881304960" className="inline-flex items-center justify-center rounded-md bg-black px-4 py-2 text-white text-sm">Llamar para reservar</a>
                 <a href="/menu" className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm">Ver menú</a>
               </div>
             </div>
             <div className="aspect-[4/3] sm:aspect-video rounded-lg bg-[url('/hero.webp')] bg-cover bg-center" aria-label="Foto del local" />
+          </div>
+        </section>
+
+        {/* Bloque descriptivo bajo el hero */}
+        <section className="bg-white">
+          <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12">
+            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">Oliva Bar e Levar – Sabor gallego con corazón</h2>
+            <p className="mt-4 text-neutral-700 leading-relaxed">
+              Descubre la auténtica cocina gallega en Oliva Bar e Levar. Platos tradicionales elaborados con ingredientes frescos y de calidad: pulpo á feira, callos con garbanzos, tortilla de bacalao y opciones vegetarianas o sin gluten. Todo acompañado de un trato cercano y familiar que te hace sentir como en casa.
+            </p>
+            <p className="mt-4 text-neutral-700 leading-relaxed">
+              Reconocidos con el Solete con Solera de la Guía Repsol, garantizamos una experiencia gastronómica auténtica y de primer nivel. Ven a disfrutar o llévate nuestro sabor a casa.
+            </p>
           </div>
         </section>
 
@@ -66,6 +79,51 @@ export function App() {
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </main>
+
+        <footer className="border-t bg-neutral-50">
+          <div className="mx-auto max-w-6xl px-4 py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm">
+            <div>
+              <div className="font-semibold">Contacto</div>
+              <ul className="mt-3 space-y-1 text-neutral-700">
+                <li>Teléfono: <a className="underline" href="tel:+34881304960">881 304 960</a></li>
+              </ul>
+            </div>
+            <div>
+              <div className="font-semibold">Horario</div>
+              <ul className="mt-3 space-y-1 text-neutral-700">
+                <li>Mié–Dom: 10:00 – 16:00</li>
+                <li>Lun y Mar: Cerrado</li>
+              </ul>
+            </div>
+            <div>
+              <div className="font-semibold">Dónde estamos</div>
+              <ul className="mt-3 space-y-1 text-neutral-700">
+                <li>Rúa Socorro, 13</li>
+                <li>15401 Ferrol, A Coruña</li>
+                <li><a className="underline" href="https://www.google.com/maps/search/?api=1&query=R%C3%BAa%20Socorro%2C%2013%2C%2015401%20Ferrol%2C%20A%20Coru%C3%B1a" target="_blank" rel="noreferrer">Ver en Google Maps</a></li>
+              </ul>
+            </div>
+            <div>
+              <div className="font-semibold">Síguenos</div>
+              <ul className="mt-3 space-y-1 text-neutral-700">
+                <li><a className="underline" href="#" target="_blank" rel="noreferrer">Instagram</a></li>
+                <li><a className="underline" href="#" target="_blank" rel="noreferrer">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="px-4 py-6 text-center text-xs text-neutral-600">
+            <p>“Comida casera y trato familiar” — Oliva Bar e Levar</p>
+          </div>
+        </footer>
+
+        {/* Botón flotante llamar (solo móvil) */}
+        <a
+          href="tel:+34881304960"
+          className="md:hidden fixed bottom-4 right-4 inline-flex items-center gap-2 rounded-full bg-black px-4 py-3 text-white shadow-lg shadow-black/20"
+          aria-label="Llamar a Oliva Bar e Levar"
+        >
+          <span className="text-sm font-medium">Llamar</span>
+        </a>
       </div>
     </BrowserRouter>
   )
