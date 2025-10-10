@@ -10,8 +10,8 @@ export function App() {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white text-neutral-900">
-        <header className="border-b">
+      <div className="min-h-screen bg-olive-25 text-neutral-900">
+        <header className="border-b border-olive-100 bg-olive-50/60 backdrop-blur">
           <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-full overflow-hidden bg-transparent flex items-center justify-center">
@@ -44,14 +44,14 @@ export function App() {
           )}
         </header>
 
-        <section className="bg-neutral-100">
+        <section className="bg-olive-50">
           <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 lg:py-24 grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl sm:text-5xl font-bold tracking-tight">Oliva Bar e Levar</h1>
               <p className="mt-3 text-neutral-700 text-sm sm:text-base">Comida casera para llevar y para disfrutar en el local. Calidad, rapidez y cercanía.</p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                <a href="tel:+34881304960" className="inline-flex items-center justify-center rounded-md bg-black px-4 py-2 text-white text-sm">Llamar para reservar</a>
-                <a href="/menu" className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm">Ver menú</a>
+                <a href="tel:+34881304960" className="inline-flex items-center justify-center rounded-md bg-olive-700 px-4 py-2 text-white text-sm hover:bg-olive-800">Llamar para reservar</a>
+                <a href="/menu" className="inline-flex items-center justify-center rounded-md border border-olive-300 px-4 py-2 text-sm hover:bg-olive-100">Ver menú</a>
               </div>
             </div>
             <div className="aspect-[4/3] sm:aspect-video rounded-lg bg-[url('/hero.webp')] bg-cover bg-center" aria-label="Foto del local" />
@@ -59,8 +59,8 @@ export function App() {
         </section>
 
         {/* Bloque descriptivo bajo el hero */}
-        <section className="bg-white">
-          <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12">
+        <section className="bg-olive-50">
+          <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12 bg-olive-25 rounded-xl shadow-sm">
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">Oliva Bar e Levar – Sabor gallego con corazón</h2>
             <p className="mt-4 text-neutral-700 leading-relaxed">
               Descubre la auténtica cocina gallega en Oliva Bar e Levar. Platos tradicionales elaborados con ingredientes frescos y de calidad: pulpo á feira, callos con garbanzos, tortilla de bacalao y opciones vegetarianas o sin gluten. Todo acompañado de un trato cercano y familiar que te hace sentir como en casa.
@@ -70,7 +70,7 @@ export function App() {
             </p>
             <div className="mt-8">
               <h3 className="text-lg font-semibold">Cómo llegar</h3>
-              <div className="mt-3 relative rounded-lg overflow-hidden shadow-sm">
+              <div className="mt-3 relative rounded-lg overflow-hidden shadow-sm bg-olive-25">
                 <iframe
                   title="Mapa de Oliva Bar e Levar"
                   src="https://www.google.com/maps?q=R%C3%BAa%20Socorro%2C%2013%2C%2015401%20Ferrol%2C%20A%20Coru%C3%B1a&output=embed"
@@ -109,7 +109,7 @@ export function App() {
           </Routes>
         </main>
 
-        <footer className="border-t bg-neutral-50">
+        <footer className="border-t border-olive-100 bg-olive-50">
           <div className="mx-auto max-w-6xl px-4 py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm">
             <div>
               <div className="font-semibold">Contacto</div>
